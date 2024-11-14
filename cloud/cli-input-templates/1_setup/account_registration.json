@@ -2,8 +2,5 @@
   "iamResources": {
     "roleArn": "arn:aws:iam::${AWS_ACCOUNT_ID}:role/AWSIoTFleetWiseServiceRole"
   },
-  "timestreamResources": {
-    "timestreamDatabaseName": "FleetWiseDatabase",
-    "timestreamTableName": "FleetWiseTable"
-  }
+  
 }
