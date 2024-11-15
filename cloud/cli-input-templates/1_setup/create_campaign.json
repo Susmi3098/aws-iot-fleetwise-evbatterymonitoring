@@ -1,0 +1,13 @@
+{
+  "name": "exampleCampaign",
+  "targetArn": "arn:aws:iot:us-east-1:123456789012:thing/MyVehicle",
+  "signalCatalogArn": "arn:aws:iam::390403879653:role/aws-service-role/iotfleetwise.amazonaws.com/AWSServiceRoleForIoTFleetWise",
+  "dataDestinationConfigs": [
+    {
+      "timestreamConfig": {
+        "timestreamTableArn": "arn:aws:timestream:us-east-1:390403879653:database/FleetWiseDatabase/table/FleetWiseTable",
+        "executionRoleArn": "arn:aws:iam::390403879653:role/AWSIoTFleetWiseServiceRole"
+      }
+    }
+  ]
+}
