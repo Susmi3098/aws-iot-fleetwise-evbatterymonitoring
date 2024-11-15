@@ -1,7 +1,7 @@
 {
   "name": "continious-monitoring-campaign",
-  "targetArn": "arn:aws:iotfleetwise:${AWS_REGION}:${AWS_ACCOUNT_ID}:fleet/blog-fleet",
-  "signalCatalogArn": "arn:aws:iotfleetwise:${AWS_REGION}:${AWS_ACCOUNT_ID}:signal-catalog/main-signal-catalog",
+  "targetArn": "arn:aws:iotfleetwise:${us-east-1}:${390403879653}:fleet/blog-fleet",
+  "signalCatalogArn": "arn:aws:iotfleetwise:${us-east-1}:${390403879653}:signal-catalog/main-signal-catalog",
   "collectionScheme": {
     "timeBasedCollectionScheme": {
       "periodMs": 30000
@@ -10,8 +10,8 @@
   "dataDestinationConfigs":[
     {
       "timestreamConfig": {
-	"executionRoleArn": "arn:aws:iam::${AWS_ACCOUNT_ID}:role/AWSIoTFleetWiseServiceRole",
-	"timestreamTableArn": "arn:aws:timestream:${AWS_REGION}:${AWS_ACCOUNT_ID}:database/FleetWiseDatabase/table/FleetWiseTable"
+	"executionRoleArn": "arn:aws:iam::${390403879653}:role/AWSIoTFleetWiseServiceRole",
+	"timestreamTableArn": "arn:aws:timestream:${us-east-1}:${390403879653}:database/FleetWiseDatabase/table/FleetWiseTable"
       }
     }
   ],
